@@ -1,1 +1,20 @@
 /* CSS declarations go here */
+@import 'Functions';
+
+* {
+  box-sizing: border-box;
+}
+
+.player {
+  @for $i from 0 through 10 {
+    &.val-#{$i} {
+      background-image: pois_ctr_bg(10% * $i);
+    }
+  }
+}
+
+.player-list {
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

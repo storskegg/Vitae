@@ -2,7 +2,8 @@ Vitae = React.createClass ({
   render () {
     return (
       <div>
-        <LiamGreeting />
+        <CurrentPlayer />
+        <PlayersList />
       </div>
     );
   }

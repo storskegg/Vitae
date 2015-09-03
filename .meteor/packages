@@ -21,6 +21,7 @@ ejson
 spacebars
 check
 react
-matthew:foundation5-sass
 meteoric:ionicons-sass
 fortawesome:fontawesome
+twbs:bootstrap
+fourseven:scss

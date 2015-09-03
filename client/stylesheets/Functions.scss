@@ -1,0 +1,10 @@
+@import '_settings';
+
+@function linear_bg($c1, $c2, $wid, $rolloff) {
+//  $rolloff: $rolloff;
+  @return linear-gradient(90deg, $c1 0%, $c2 $wid - $rolloff, rgba(0,0,0,0) $wid + $rolloff);
+}
+
+@function pois_ctr_bg($wid) {
+  @return linear_bg(green, green, $wid, $poison_counter_bg_rolloff);
+}
